@@ -65,5 +65,6 @@ public class BankAccount {
     public String getCustomerInfo(){
         return this.customer.getName() + " from " + this.customer.getAddress();
     }
+    
 
 }
