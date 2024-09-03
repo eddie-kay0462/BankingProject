@@ -6,7 +6,7 @@ public class Customer {
     /**
      * Name of customer
      */
-    String name;
+    String nam;
     /**
      * address of customer
      */
