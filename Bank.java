@@ -68,6 +68,40 @@ public class Bank {
         //print new balances
         System.out.println(checkingAccount.getAccountInfo());
         System.out.println(savingAccount.getAccountInfo());
+
+        //withdrawals
+
+        //from checking
+        System.out.println();
+        System.out.println("Enter an amount to withdraw from the checking account");
+        amount = scanner.nextDouble(); //get next token (double)
+
+         //withdraw from checking
+        try {
+            checkingAccount.withdraw(amount);
+        } catch (Exception e) {
+            // print custom error message 
+            System.out.println(e.getMessage());
+        }
+
+         //from savings
+         System.out.println();
+         System.out.println("Enter an amount to withdraw from the savings account");
+         amount = scanner.nextDouble(); //get next token (double)
+ 
+        //withdraw from savings
+         try {
+            savingAccount.withdraw(amount);
+        } catch (Exception e) {
+             // print custom error message 
+             System.out.println(e.getMessage());
+        }
+
+        //print new balances
+        System.out.println(checkingAccount.getAccountInfo());
+        System.out.println(savingAccount.getAccountInfo());
+
+        scanner.close();
     }
     
 }
